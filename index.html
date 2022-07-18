@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Tracker</title>
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="bg">
+
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">Crypto-Tracker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="https://github.com/soniDeepanshi/CryptoCurrencyTracker" target="_blank">Code</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- side social icons and links -->
+        <div class="social">
+            <ul>
+                <li><a href="#">Instagram <i class="fa-brands fa-instagram"></i></i></a></li>
+                <li><a href="https://github.com/soniDeepanshi">Github <i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/deepanshi-soni-151978192/">Linkedin <i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!-- main content -->
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-6 row justify-content-center" id="allContent">
+                    <div class="col-10">
+                        <form action="" id="searchForm">
+                            <div class="form-row">
+                                <div class="col-12 form-group">
+                                    <select name="coinType" class="form-select form-select-lg mb-3 form-control" id="c">
+                                        <option selected>Select Coin-type</option>
+                                        <option value="bitcoin">Bitcoin</option>
+                                        <option value="dogecoin">Dogecoin</option>
+                                        <option value="ethereum">Ethereum</option>
+                                        <option value="tether">Tether</option>
+                                        <option value="binance-coin">Binance</option>
+                                        <option value="ripple">XRP</option>
+                                        <option value="cardano">Cardano</option>
+                                        <option value="polkadot">Polkadot</option>
+                                        <option value="dai">Dai</option>
+                                        <option value="tron">Tron</option>
+                                        <option value="solana">Solana</option>
+                                        <option value="avalanche-2">Avalanche</option>
+                                        <option value="matic-network">Polygon</option>
+                                        <option value="stellar">Steller</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="col-12 btn btn-primary">Get Price</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-7 text-center row justify-content-center">
+                    <table class="table table-bordered table-secondary table-striped table-hover col-md-7 m-3"
+                        border="1px" id="resultTable">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+    <!-- live chat  -->
+    <script type='text/javascript'
+        data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '4daa8142-d695-4edd-b532-400c6f93f8de', f: true }); done = true; } }; })();</script>
+</body>
+
+</html>

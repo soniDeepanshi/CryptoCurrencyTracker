@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.logo{
+    font-family: 'Lobster', cursive;
+}
+
+.bg::after {
+  content: "";
+  background-image: url("https://images.unsplash.com/photo-1627454822466-0b05090cb737?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1102&q=80"); */
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+/* social media   */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social ul {
+  padding: 0px;
+  transform: translate(-270px, 0);
+}
+
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+
+.social ul li:hover {
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.social ul li:hover a {
+  color: #000;
+}
+
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
+.social ul li i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 5px 4px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    background: #ffffff;
+    transform: rotate(0deg);
+}
